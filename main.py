@@ -1,11 +1,17 @@
 from study import *
 
+# 파일
+# File.write()
+# File.read()
+# File.readline()
+File.readline_while()
+File.readline_list()
 
 # API
 #Api.apiStudy1()
 
 # 택시 승객 매칭
-Lotto.taxi()
+# Lotto.taxi()
 
 # 주문
 # Order.qna()
