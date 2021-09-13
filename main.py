@@ -4,8 +4,8 @@ from study import *
 # File.write()
 # File.read()
 # File.readline()
-File.readline_while()
-File.readline_list()
+# File.readline_while()
+# File.readline_list()
 
 # API
 #Api.apiStudy1()
@@ -24,9 +24,9 @@ File.readline_list()
 userInfo = ["유재석","하하","김태호","김종국","조세호"]
 cabinetInfo = {"A":2,"B":8}
 
-# cabinetResult = Cabinet.cabinetAdmin(userInfo, cabinetInfo)
-# Cabinet.cabinetWho(cabinetResult,"김태호")
-# Cabinet.cabinetUnused(cabinetResult, cabinetInfo)
+cabinetResult = Cabinet.cabinetAdmin(userInfo, cabinetInfo)
+Cabinet.cabinetWho(cabinetResult,"김태호")
+Cabinet.cabinetUnused(cabinetResult, cabinetInfo)
 
 
 
