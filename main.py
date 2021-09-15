@@ -28,7 +28,5 @@ cabinetResult = Cabinet.cabinetAdmin(userInfo, cabinetInfo)
 Cabinet.cabinetWho(cabinetResult,"김태호")
 Cabinet.cabinetUnused(cabinetResult, cabinetInfo)
 
-
-
 # 로또번호
 # Lotto.lotto(5)
