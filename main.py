@@ -11,7 +11,7 @@ from study import *
 Lotto.taxi()
 
 # 주문
-# Order.qna()
+Order.qna()
 
 # 이벤트
 # Event.gift()
