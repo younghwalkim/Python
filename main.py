@@ -8,7 +8,7 @@ from study import *
 # File.readline_list()
 
 # 택시 승객 매칭
-Lotto.taxi()
+# Lotto.taxi()
 
 # 주문
 # Order.qna()
@@ -26,4 +26,4 @@ cabinetInfo = {"A":2,"B":8}
 # Cabinet.cabinetUnused(cabinetResult, cabinetInfo)
 
 # 로또번호
-# Lotto.lotto(5)
+Lotto.lotto(5)
