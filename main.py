@@ -1,29 +1,41 @@
-from study import *
+# test_dict 디렉토리 안에 있는 dict_sample.py 파일 안의 함수를 사용하려면
+# import 문을 사용해서 임포트 선언해야 함
 
-# 파일
-# File.write()
-# File.read()
-# File.readline()
-# File.readline_while()
-# File.readline_list()
+# 모듈 : 함수를 가지고 있는 파이썬 파일
+# import 파일명  => 같은 디렉토리 안의 파일을 불러 들일 때
+# import 디렉토리명.파일명    => 다른 디렉토리의 파일을 불러 들일 때
 
-# 택시 승객 매칭
-Lotto.taxi()
-
-# 주문
-# Order.qna()
-
-# 이벤트
-# Event.gift()
+# import test_dict.dict_sample
+# 모듈명이 길거나 복잡하면 줄임말을 지정할 수도 있음
+# import 모듈명 as 줄임말
+import test_dict.dict_sample as ts
+import mission.dict_mission1 as m1
+import mission.dict_mission2 as m2
 
 
-# 케비넷관리
-userInfo = ["유재석","하하","김태호","김종국","조세호"]
-cabinetInfo = {"A":2,"B":8}
+if __name__ == '__main__':
+    # 임포트한 모듈(파일)이 가진 함수를 사용하려면 (함수 실행)
+    # 모듈명.함수명()  또는 모듈줄임말.함수명()
+    # test_dict.dict_sample.test1()
+    # ts.test1()
+    # ts.test2()
+    # ts.test3()
+    # ts.test4()
+    # ts.test5()
+    # ts.test6()
+    # ts.test7()
+    # ts.test8()
 
-# cabinetResult = Cabinet.cabinetAdmin(userInfo, cabinetInfo)
-# Cabinet.cabinetWho(cabinetResult,"김태호")
-# Cabinet.cabinetUnused(cabinetResult, cabinetInfo)
+    # 사전 자료형 복습문제 1
+    # m1.dict_func()
+    # m1.dictfunc2()
+    # m1.dictfunc3()
 
-# 로또번호
-# Lotto.lotto(5)
+    # 사전 자료형 복습문제 2
+    # m2.dictfunc1()
+    m2.dictfunc2()
+
+
+
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
