@@ -1,5 +1,4 @@
 from random import *
-
 class Cabinet:
   def cabinetAdmin(userInfo, cabinetInfo):
     
