@@ -8,7 +8,7 @@
 # import test_dict.dict_sample
 # 모듈명이 길거나 복잡하면 줄임말을 지정할 수도 있음
 # import 모듈명 as 줄임말
-import test_dict.dict_sample as ts
+import dict.dict_sample as ts
 import mission.dict_mission1 as m1
 import mission.dict_mission2 as m2
 
@@ -23,12 +23,12 @@ if __name__ == '__main__':
     # ts.test5()
     # ts.test6()
     # ts.test7()
-    # ts.test8()
+    ts.test8()
 
     # 사전 자료형 복습문제 1
     # m1.dict_func()
     # m1.dictfunc2()
-    # m1.dictfunc3()
+    m1.dictfunc3()
 
     # 사전 자료형 복습문제 2
     # m2.dictfunc1()
