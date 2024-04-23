@@ -11,6 +11,7 @@
 import dict.dict_sample as ts
 import mission.dict_mission1 as m1
 import mission.dict_mission2 as m2
+import test_set.set_sample as tss
 
 if __name__ == '__main__':
     # 임포트한 모듈(파일)이 가진 함수를 사용하려면 (함수 실행)
@@ -23,15 +24,23 @@ if __name__ == '__main__':
     # ts.test5()
     # ts.test6()
     # ts.test7()
-    ts.test8()
+    # ts.test8()
 
     # 사전 자료형 복습문제 1
     # m1.dict_func()
     # m1.dictfunc2()
-    m1.dictfunc3()
+    # m1.dictfunc3()
 
     # 사전 자료형 복습문제 2
     # m2.dictfunc1()
-    m2.dictfunc2()
+    # m2.dictfunc2()
 
+    #  set 자료형 테스트
+    tss.test1()
+    tss.test2()
+    tss.test3()
+    tss.test4()
+    tss.test5()
+    tss.test6()
+    tss.test7()
 
