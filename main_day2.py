@@ -1,6 +1,6 @@
-import chap02.chap02 as c02
-import chap02.chap02_allocation as c02all
-import chap02.chap02_input as c02input
+import chapter.chap02 as c02
+import chapter.chap02_allocation as c02all
+import chapter.chap02_input as c02input
 
 if __name__ == '__main__':
     c02.chap02()
