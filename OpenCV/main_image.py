@@ -127,6 +127,63 @@ def ch_2_9():
             cv.destroyAllWindows()
             break
 
+def ch_3_2():
+    import cv2 as cv
+    import matplotlib.pyplot as plt
+
+    img = cv.imread('img_soccer.jpg')
+    h = cv.calcHist([img], [2], None, [256], [0, 256])  # 2번 채널인 R 채널에서 히스토그램 구함
+    plt.plot(h, color='r', linewidth=1)
+
+def ch_3_3():
+    import cv2 as cv
+    import sys
+
+    img = cv.imread('img_soccer.jpg')
+
+    t, bin_img = cv.threshold(img[:, :, 2], 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
+    print('오츄 알고리즘이 찾은 최적 임곗값=', t)
+
+    cv.imshow('R channel', img[:, :, 2])  # R 채널 영상
+    cv.imshow('R channel binarization', bin_img)  # R 채널 이진화 영상
+
+    cv.waitKey()
+    cv.destroyAllWindows()
+
+def ch_3_4():
+    import cv2 as cv
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    img = cv.imread('JohnHancocksSignature.png', cv.IMREAD_UNCHANGED)
+
+    t, bin_img = cv.threshold(img[:, :, 3], 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)
+    plt.imshow(bin_img, cmap='gray'), plt.xticks([]), plt.yticks([])
+    plt.show()
+
+    b = bin_img[bin_img.shape[0] // 2:bin_img.shape[0], 0:bin_img.shape[0] // 2 + 1]
+    plt.imshow(b, cmap='gray'), plt.xticks([]), plt.yticks([])
+    plt.show()
+
+    se = np.uint8([[0, 0, 1, 0, 0],  # 구조 요소
+                   [0, 1, 1, 1, 0],
+                   [1, 1, 1, 1, 1],
+                   [0, 1, 1, 1, 0],
+                   [0, 0, 1, 0, 0]])
+
+    b_dilation = cv.dilate(b, se, iterations=1)  # 팽창
+    plt.imshow(b_dilation, cmap='gray'), plt.xticks([]), plt.yticks([])
+    plt.show()
+
+    b_erosion = cv.erode(b, se, iterations=1)  # 침식
+    plt.imshow(b_erosion, cmap='gray'), plt.xticks([]), plt.yticks([])
+    plt.show()
+
+    b_closing = cv.erode(cv.dilate(b, se, iterations=1), se, iterations=1)  # 닫기
+    plt.imshow(b_closing, cmap='gray'), plt.xticks([]), plt.yticks([])
+    plt.show()
+
+
 # 프로그램을 시작하는 구문임
 if __name__ == '__main__':
     
@@ -143,4 +200,10 @@ if __name__ == '__main__':
     # ch_2_8()
 
     # 사진에 점선 그리기
-    ch_2_9()
+    # ch_2_9()
+
+    # ch_3_2()
+
+    # ch_3_3()
+
+    ch_3_4()
