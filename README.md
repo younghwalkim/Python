@@ -19,3 +19,6 @@
 
 ### Mysql DB 연결 
 * Connect, Select - /testdb/[test_mysql.py](testdb%2Ftest_mysql.py)
+
+### 이미지, 영상 
+* OpenCV
